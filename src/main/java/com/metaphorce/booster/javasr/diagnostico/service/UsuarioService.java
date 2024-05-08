@@ -21,10 +21,16 @@ public class UsuarioService {
 		return data;
 	}
 
-	public Usuario getUsuario(Long UsuarioId) {
+	public Usuario getUsuario(Long usuarioId) {
 		Usuario data = null;
 
-		data = this.repository.getReferenceById(UsuarioId);
+		try {
+			data = this.repository.findById(usuarioId).get();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+			System.out.println("Error --> " + e);
+		}
 
 		return data;
 	}
