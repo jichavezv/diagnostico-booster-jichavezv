@@ -50,9 +50,9 @@ public class UsuarioController {
 		if (data != null) {
 			response = new ResponseEntity<>(data, HttpStatus.OK);
 		} else {
-			response = new ResponseEntity<>(HttpStatus.NOT_FOUND);
+			response = new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
-
+		
 		return response;
 	}
 
