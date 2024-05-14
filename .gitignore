@@ -32,3 +32,16 @@ target/**/*.class
 .classpath
 .project
 *.xml
+
+target/**
+target/classes/**/*.class
+target/test-classes
+
+*.txt
+
+.settings
+.project
+.classpath
+.factorypath
+
+*.MF
