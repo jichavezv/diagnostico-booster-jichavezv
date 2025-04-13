@@ -23,6 +23,16 @@
 hs_err_pid*
 replay_pid*
 
+*.jar.original
+*.lst
+*.txt
+target/**/*.class
+.settings
+.factorypath
+.classpath
+.project
+*.xml
+
 target/**
 target/classes/**/*.class
 target/test-classes
